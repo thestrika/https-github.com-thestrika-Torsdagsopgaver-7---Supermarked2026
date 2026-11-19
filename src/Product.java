@@ -16,4 +16,29 @@ public class Product {
         this.quantity = quantity;
         this.unit = unit;
     }
+
+    public String getEAN(){
+        return EAN;
+    }
+
+    public String getName(){
+        return name;
+    }
+
+    public String getDate(){
+        return date;
+    }
+
+    public double getPrice(){
+        return price;
+    }
+
+    public double getQuantity(){
+        return quantity;
+    }
+
+    public String getUnit(){
+        return unit;
+    }
+
 }
