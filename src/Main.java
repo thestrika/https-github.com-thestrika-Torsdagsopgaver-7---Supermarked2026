@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.util.Collection;
 import java.util.Map;
 
 public class Main {
@@ -8,6 +9,10 @@ public class Main {
         Map<String, Product> offers = FileIO.loadProducts("data/tilbud.csv");
         CashRegister register = new CashRegister(allProducts, offers);
 
+
+        Robot robot = new Robot();
+        Collection<Product> basket = robot.fyldIKurv(allProducts.values());
+        register.printReceipt(basket);
 
 
 
